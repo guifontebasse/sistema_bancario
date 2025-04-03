@@ -40,10 +40,13 @@ while True:
 
     elif option == 2:
         deposit = float(input("Enter the amount you wish to deposit: "))
-        balance = deposit + balance
-        transaction_history.append(
-            f"Deposit £{deposit:.2f}. Balance £{balance:.2f}")
-        print(f"Your current balance: £{balance:.2f} ")
+        if deposit > 0:
+            balance = deposit + balance
+            transaction_history.append(
+                f"Deposit £{deposit:.2f}. Balance £{balance:.2f}")
+            print(f"Your current balance: £{balance:.2f} ")
+        else:
+            print("Invalid amount")
 
     elif option == 3:
         print("\n".join(transaction_history))

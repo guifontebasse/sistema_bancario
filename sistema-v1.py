@@ -39,9 +39,12 @@ while True:
 
     elif opcao == 2:
         deposito = float(input("Informe quanto deseja depositar: "))
-        saldo = deposito + saldo
-        extrato.append(f"Deposito R${deposito:.2f}. Saldo R${saldo:.2f}")
-        print(f"seu saldo atual: R${saldo:.2f} ")
+        if deposito > 0:
+            saldo = deposito + saldo
+            extrato.append(f"Deposito R${deposito:.2f}. Saldo R${saldo:.2f}")
+            print(f"seu saldo atual: R${saldo:.2f} ")
+        else:
+            print("Valor invalido")
 
     elif opcao == 3:
         print("\n".join(extrato))
