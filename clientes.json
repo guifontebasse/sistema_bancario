@@ -1,6 +1,22 @@
 {
+    "0123456789": {
+        "nome": "Guilherme Fontebasse",
+        "senha": "995263",
+        "saldo": 975.0,
+        "extrato": [
+            "Deposito: R$1250.00  13:54",
+            "Saque: R$50.00  13:54",
+            "Saque: R$325.00  15:15",
+            "Deposito: R$100.00  15:16"
+        ]
+    },
     "11111111111": {
-        "nome": "Guilherme",
-        "senha": 995263
+        "nome": "Suzeth Barbosa De Sousa",
+        "senha": "1234",
+        "saldo": 200.0,
+        "extrato": [
+            "Deposito: R$500.00  13:57",
+            "Saque: R$300.00  13:57"
+        ]
     }
 }
